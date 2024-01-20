@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Undangan Pernikahan</title>
+    <title>Document</title>
     <style>
         img{
             width: 100%;
             height: 100%;
-            
         }
     </style>
 </head>
@@ -15,8 +14,12 @@
     <img src="layer2.jpg"><br>
     <img src="layer3.jpg"><br>
     <img src="layer4.jpg"><br>
-    <audio controls autoplay loop hidden>
+    <audio id="audioPlayer" controls autoplay playsinline>
         <source src="Lagu.mp3" type="audio/mpeg">
-    </audio>
+    <script>
+        window.onload = function() {
+            document.getElementById('audioPlayer').play();
+        };
+    </script>
 </body>
 </html>
